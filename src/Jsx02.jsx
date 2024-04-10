@@ -1,0 +1,10 @@
+import React from "react";
+
+const Jsx02 = () =>{
+    const name = '박은혜';
+    return (
+        <>제 이름은 {name}입니다.</>
+    )
+}
+
+export default Jsx02;
