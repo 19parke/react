@@ -1,13 +1,7 @@
 import React from 'react';
 
-// 실습
-// props 받아서 form 태그에 
-// input 태그 4개 이름, 나이, 핸드폰번호, 이메일
-// 화면 쪽에서 유효값 검사
-
-const Form = (props) => {
-
-    const {style, inputsRef , formRef, onClickInputValue} = props
+const Format = (props) => {
+    const {style, inputsRef, formRef, onClickInputValue} = props
 
     return (
         <div>
@@ -22,4 +16,4 @@ const Form = (props) => {
     );
 };
 
-export default Form;
+export default Format;

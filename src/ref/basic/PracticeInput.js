@@ -1,15 +1,7 @@
 import React, { useRef } from 'react';
-import Form from './Form';
+import Format from './Format';
 
-/*
-[ 여러 표기법 기억하기 ]
-display : "flex" - 화면 표기법
-flexDirection : "column", - 카멜표기법
-flex-Direction : "column", - 케밥표기법
-flex_Direction : "column", - 스네이크표기법
-*/
-
-const Checkinput = () => {
+const PracticeInput = () => {
 
     const style = {
         display : "flex", 
@@ -32,9 +24,9 @@ const Checkinput = () => {
 
     return (
         <div>
-            <Form style={style} inputsRef={inputsRef} formRef={formRef} onClickInputValue={onClickInputValue}/>
+            <Format style={style} inputsRef={inputsRef} formRef={formRef} onClickInputValue={onClickInputValue}/>
         </div>
     );
 };
 
-export default Checkinput;
+export default PracticeInput;

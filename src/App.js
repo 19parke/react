@@ -1,6 +1,5 @@
 import "./App.css";
-import Form from "./ref/basic/Form";
-// import Checkinput from "./ref/basic/Checkinput";
+import PracticeInput from "./ref/basic/PracticeInput";
 // import Check from "./ref/basic/Check";
 // import Checkbox from "./ref/basic/Checkbox";
 // import Name from "./ref/basic/Name";
@@ -36,8 +35,7 @@ function App() {
         // <Name/>
         // <Check/>
         // <Checkbox/>
-        // <Checkinput/>
-        <Form/>
+        <PracticeInput/>
     );
 }
 
