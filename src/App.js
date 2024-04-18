@@ -1,5 +1,7 @@
 import "./App.css";
-import PracticeInput from "./ref/basic/PracticeInput";
+import FoodContainer from "./ref/expert/FoodContainer";
+import FoodContainerAnswer from "./ref/expert/FoodContainerAnswer";
+// import PracticeInput from "./ref/basic/PracticeInput";
 // import Check from "./ref/basic/Check";
 // import Checkbox from "./ref/basic/Checkbox";
 // import Name from "./ref/basic/Name";
@@ -35,7 +37,9 @@ function App() {
         // <Name/>
         // <Check/>
         // <Checkbox/>
-        <PracticeInput/>
+        // <PracticeInput/>
+        // <FoodContainer/>
+        <FoodContainerAnswer/>
     );
 }
 
