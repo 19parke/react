@@ -5,10 +5,14 @@
 // 짝수가 아니라면 "꽝"을 화면에 출력
 
 import React from 'react';
+import PassComponent from './PassComponent'; //외부에서 분리가능, 모듈, 밖에서 가져오기
+import LuckyComponent from './LuckyComponent';
+import UnluckyComponent from './UnluckyComponent';
+import NotPassComponent from './NotPassComponent';
 
 const Jsx05 = () => {
     
-    const age = 10;
+    const age = 13;
     // 비구조화 변수 할당
     const [pass, notPass, lucky, unLucky] = ['입장 가능', '입장 불가', '당첨', '꽝']
 
@@ -17,14 +21,19 @@ const Jsx05 = () => {
     const isEven = age % 2 ===0;
 
     // 컴포넌트를 제작
-    const passComponent = (<div>{pass}</div>)
-    const notPassComponent = (<div>{notPass}</div>)
-    const luckyComponent = (<div>{lucky}</div>)
-    const unLuckyComponent = (<div>{unLucky}</div>)
+    // 컴포넌트 분리시 warning이 뜨기 때문에 주석처리하는 습관 들이기
+    // const passComponent = (<div>{pass}</div>)
+    // const notPassComponent = (<div>{notPass}</div>)
+    // const luckyComponent = (<div>{lucky}</div>)
+    // const unLuckyComponent = (<div>{unLucky}</div>)
 
     //삼항 연산자
-    const enter = isAdult ? passComponent : notPassComponent;
-    const win = isEven ? luckyComponent : unLuckyComponent;
+    // 컴포넌트 분리
+    // notPassComponent, luckyComponent, unLuckyComponent
+    // const enter = isAdult ? passComponent : notPassComponent;
+    // const win = isEven ? luckyComponent : unLuckyComponent;
+    const enter = isAdult ? <PassComponent/> : <NotPassComponent/>;
+    const win = isEven ? <LuckyComponent/> : <UnluckyComponent/>
 
     // JSX는 if문을 사용할 수 없기 때문에 삼항 연산자를 지원한다. 
     // 조건식 ? 참일 대 랜더링할 JSX : 거짓일 때 랜더링할 JSX
