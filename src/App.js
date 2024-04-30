@@ -1,6 +1,11 @@
 import "./App.css";
-import FoodContainer from "./ref/expert/FoodContainer";
-import FoodContainerAnswer from "./ref/expert/FoodContainerAnswer";
+// import InfiniteLoop from "./LifeCycle/class/InfiniteLoop";
+// import SideEffect from "./LifeCycle/function/SideEffect";
+import SideEffectMount from "./LifeCycle/function/SideEffectMount";
+import Amount from "./LifeCycle/memorization/Amount";
+// import LifeCycleContainer from "./LifeCycle/class/LifeCycleContainer";
+// import FoodContainer from "./ref/expert/FoodContainer";
+// import FoodContainerAnswer from "./ref/expert/FoodContainerAnswer";
 // import PracticeInput from "./ref/basic/PracticeInput";
 // import Check from "./ref/basic/Check";
 // import Checkbox from "./ref/basic/Checkbox";
@@ -39,7 +44,12 @@ function App() {
         // <Checkbox/>
         // <PracticeInput/>
         // <FoodContainer/>
-        <FoodContainerAnswer/>
+        // <FoodContainerAnswer/>
+        // <LifeCycleContainer/>
+        // <InfiniteLoop/>
+        // <SideEffect/>
+        // <SideEffectMount/>
+        // <Amount/>
     );
 }
 
