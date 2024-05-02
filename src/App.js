@@ -1,8 +1,13 @@
 import "./App.css";
+// import CountContainer from "./pages/count/CountContainer";
+import FontContainer from "./pages/font/FontContainer";
 // import InfiniteLoop from "./LifeCycle/class/InfiniteLoop";
 // import SideEffect from "./LifeCycle/function/SideEffect";
-import SideEffectMount from "./LifeCycle/function/SideEffectMount";
-import Amount from "./LifeCycle/memorization/Amount";
+// import SideEffectMount from "./LifeCycle/function/SideEffectMount";
+// import Amount from "./LifeCycle/memoization/Amount";
+// import ProductContainer from "./LifeCycle/memoization/ProductContainer";
+// import StyledComponent01 from "./style/basic/StyledComponent01";
+// import GlobalStyle from "./style/global";
 // import LifeCycleContainer from "./LifeCycle/class/LifeCycleContainer";
 // import FoodContainer from "./ref/expert/FoodContainer";
 // import FoodContainerAnswer from "./ref/expert/FoodContainerAnswer";
@@ -49,7 +54,14 @@ function App() {
         // <InfiniteLoop/>
         // <SideEffect/>
         // <SideEffectMount/>
-        // <Amount/>
+        // <ProductContainer/>\
+        // 원래는 f1 눌러서 emmet으로 되어야 한다.
+        // <div class="">
+        //     <StyledComponent01/>
+        //     <GlobalStyle/>
+        // </div>
+        // <CountContainer/>
+        <FontContainer/>
     );
 }
 

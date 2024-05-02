@@ -33,5 +33,4 @@ const AnimalsProvider = ({children}) => {
 export {AnimalsProvider, AnimalsContext}
 
 
-
 // Consumer 생성
