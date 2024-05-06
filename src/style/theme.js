@@ -1,6 +1,9 @@
 // 화이트 모드, 다크 모드
+// 만들어놓고 필요할 때 가져다가 사용하는 형태
+
 const theme = {};
 
+// 변수처럼 사용하기 보다는 제공해주는 로직이 있음
 theme.PALLETE = {
     primary : {
         main : "#ffd159",
@@ -13,6 +16,7 @@ theme.PALLETE = {
         200 : "#aea8b2",
         300 : "#605866",
     },
+    // error color
     error : "eb6144",
     background : {
         white : "#fff",

@@ -3,6 +3,9 @@ import { AnimalsContext } from '../AnimalsContext';
 import Animal from './Animal';
 import useInput from './useInput';
 
+// 중간다리 컴포넌트
+
+
 // Context에 저장된 동물 세마리를 버튼으로 출력
 // 동물 세마리의 초기 값 "누렁이", "점박이", "야옹이"
 // input에 동물을 입력 후 엔터를 치면 동물 버튼을 추가

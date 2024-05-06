@@ -30,6 +30,7 @@ const AnimalsProvider = ({children}) => {
     )
 }
 
+// export {Provider, Consumer}
 export {AnimalsProvider, AnimalsContext}
 
 

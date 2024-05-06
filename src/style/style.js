@@ -43,6 +43,10 @@ S.Input = styled.input`
 S.Button = styled.button`
     background-color: orchid;
     border: none;
+    ${flexCenterColumn};
+    /* callback 함수 받아야 한다. 어떤 값을 받을 것이기 때문에, {theme} 비구조할당 */
+    /* theme파일의 에서 상수로 선언한 FONT_SIZE에서 것 h1키값 가져오기 */
+    font-size: ${({theme}) => theme.FONT_SIZE["h1"]};
 `
 
 // S.Styled = styled.div`

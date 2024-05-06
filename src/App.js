@@ -1,6 +1,9 @@
+import { ThemeProvider } from "styled-components";
 import "./App.css";
+import theme from "./style/theme";
+import AnimalsContainer from "./context/expert/AnimalsContainer";
 // import CountContainer from "./pages/count/CountContainer";
-import FontContainer from "./pages/font/FontContainer";
+// import FontContainer from "./pages/font/FontContainer";
 // import InfiniteLoop from "./LifeCycle/class/InfiniteLoop";
 // import SideEffect from "./LifeCycle/function/SideEffect";
 // import SideEffectMount from "./LifeCycle/function/SideEffectMount";
@@ -8,6 +11,10 @@ import FontContainer from "./pages/font/FontContainer";
 // import ProductContainer from "./LifeCycle/memoization/ProductContainer";
 // import StyledComponent01 from "./style/basic/StyledComponent01";
 // import GlobalStyle from "./style/global";
+// import BasicContainer from "./style/basic/BasicContainer";
+// import FontAwesome from "./style/fontAwesome/FontAwesome";
+// import CharContainer from "./context/basic/CharContainer";
+// import ParentContainer from "./context/normal/ParentContainer";
 // import LifeCycleContainer from "./LifeCycle/class/LifeCycleContainer";
 // import FoodContainer from "./ref/expert/FoodContainer";
 // import FoodContainerAnswer from "./ref/expert/FoodContainerAnswer";
@@ -55,13 +62,23 @@ function App() {
         // <SideEffect/>
         // <SideEffectMount/>
         // <ProductContainer/>\
+        // 내가 사용하고 있는 모든 어플리케이션 / 컴포넌트에게 값을 전달해주기 위해 provider, 테마를 제공해주는
+        // 그 밑 자식 컴포넌트들이 제공 받는다. 내가 만든 테마를 꼭 import 해줘야 한다.
+        // <ThemeProvider theme={theme}>
         // 원래는 f1 눌러서 emmet으로 되어야 한다.
-        // <div class="">
-        //     <StyledComponent01/>
-        //     <GlobalStyle/>
-        // </div>
+        //<div class="">
+            //<StyledComponent01/>
+            //<GlobalStyle/>
+            //<BasicContainer/>
+            //<FontAwesome/>
+        //</div>
+        ///ThemeProvider>
+        // <>안녕 리액트</>
+        // <CharContainer/>
+        // <ParentContainer/>
+        <AnimalsContainer/>
         // <CountContainer/>
-        <FontContainer/>
+        // <FontContainer/>
     );
 }
 
