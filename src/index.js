@@ -13,21 +13,33 @@ import {devToolsEnhancer} from 'redux-devtools-extension'
 import {Provider} from 'react-redux'
 import font from './redux/modules/font';
 
+// route 모듈 가져오기
+import route from './routes/modules/route';
+
+import { BrowserRouter } from 'react-router-dom'
+import { RouteProvider } from './context/RouteContext';
+
 // 어떻게 값이 변했는지 확인하기 위해 devTools이용
 // const store = createStore(count, devToolsEnhancer())
 
 // store라는 reducer 만들고 있는데 
 // craeteStore값이 변하면 옵션 보게 해줘, 
 // 그리고 나중에 store넘겨줘
-const store = createStore(font, devToolsEnhancer())
+// const store = createStore(font, devToolsEnhancer())
+
+const store = createStore(route, devToolsEnhancer())
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-  {/* Provider로 감싸고 내가 만든 store 보내주기 */}
-  <Provider store={store}>
-    <App />
-  </Provider>
+    <BrowserRouter>
+      {/* Provider로 감싸고 내가 만든 store 보내주기 */}
+      <Provider store={store}>
+        <RouteProvider>
+          <App />
+        </RouteProvider>
+      </Provider>
+    </BrowserRouter>
   </>
 );
 

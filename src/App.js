@@ -1,7 +1,11 @@
 import { ThemeProvider } from "styled-components";
 import "./App.css";
 import theme from "./style/theme";
-import AnimalsContainer from "./context/expert/AnimalsContainer";
+import { Route, Routes } from "react-router-dom";
+import Main from "./pages/main/Main";
+import Intro from "./pages/intro/Intro";
+import Job from "./pages/job/Job";
+// import AnimalsContainer from "./context/expert/AnimalsContainer";
 // import CountContainer from "./pages/count/CountContainer";
 // import FontContainer from "./pages/font/FontContainer";
 // import InfiniteLoop from "./LifeCycle/class/InfiniteLoop";
@@ -76,9 +80,19 @@ function App() {
         // <>안녕 리액트</>
         // <CharContainer/>
         // <ParentContainer/>
-        <AnimalsContainer/>
+        // <AnimalsContainer/>
         // <CountContainer/>
         // <FontContainer/>
+        <>
+            <Routes>
+                {/*  / 는 메인페이지(home) , / 여기 들어오면 element 보여줘*/}
+                <Route path='/' element={<Main />}/>
+                <Route path='/intro' element={<Intro />}/>
+                <Route path='/job' element={<Job/>}>
+                    <Route path=':title' element={<Job/>}/>
+                </Route>
+            </Routes>
+        </>
     );
 }
 
