@@ -32,14 +32,14 @@ const store = createStore(route, devToolsEnhancer())
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
       {/* Provider로 감싸고 내가 만든 store 보내주기 */}
       <Provider store={store}>
-        <RouteProvider>
+        {/* <RouteProvider> */}
           <App />
-        </RouteProvider>
+        {/* </RouteProvider> */}
       </Provider>
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
   </>
 );
 

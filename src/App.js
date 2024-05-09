@@ -39,6 +39,8 @@ import Job from "./pages/job/Job";
 // import Jsx04 from "./Jsx04";
 // import Jsx05 from "./Jsx05";
 // import Container from "./props/Container";
+import { RouterProvider } from "react-router-dom";
+import router from "./routes/router";
 
 function App() {
     // 돔트리가 하나 이상이면 오류, 돔트리는 무조건 한 개
@@ -84,15 +86,17 @@ function App() {
         // <CountContainer/>
         // <FontContainer/>
         <>
-            <Routes>
+            {/* <Routes> */}
                 {/*  / 는 메인페이지(home) , / 여기 들어오면 element 보여줘*/}
-                <Route path='/' element={<Main />}/>
+                {/* <Route path='/' element={<Main />}/>
                 <Route path='/intro' element={<Intro />}/>
                 <Route path='/job' element={<Job/>}>
                     <Route path=':title' element={<Job/>}/>
                 </Route>
-            </Routes>
+            </Routes> */}
+            <RouterProvider router={router}/>
         </>
+
     );
 }
 
